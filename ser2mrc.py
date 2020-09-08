@@ -24,8 +24,7 @@ for file in files:
     if os.path.exists(file): 
         if file.endswith('.ser'):
             command = ['e2proc2d.py',file,file.replace('.ser','.'+ext)]
-            #subprocess.call(command)
-            print(' '.join(command))
+            subprocess.call(command)
             
         else: print('File:"%s" does not end with .ser' % file)
     else: print('File:"%s" does not exist' % file)
