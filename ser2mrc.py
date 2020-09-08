@@ -1,3 +1,5 @@
+#https://blake.bcm.edu/emanwiki/EMAN2ImageFormats
+
 import subprocess, os, argparse
 
 parser = argparse.ArgumentParser(description='rename file from basefilename_1.ser to basefilename.ser')
@@ -5,7 +7,7 @@ parser.add_argument('--filename', type=str, nargs=1,
                     help='file containing list of .ser file names')
 parser.add_argument('--ext', type=str, nargs=1,
                     default='mrc',
-                    choices=['mrc','tif'],
+                    choices=['mrc','png'],
                     help='output extension')
 parser.add_argument('--info', type=str, nargs=1,
                     help='''
